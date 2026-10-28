@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Volg de Koran</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://followthequran.com/nl/">
+<script>
+  // Send the visitor to the same page of the Dutch site on the main domain.
+  // ?lang=nl makes the site remember Dutch, the language for this domain.
+  var p = location.pathname;
+  if (!/^\/(nl|en|de)\//.test(p)) p = '/nl' + (p === '/' ? '/' : p);
+  location.replace('https://followthequran.com' + p + (location.search ? location.search + '&' : '?') + 'lang=nl' + location.hash);
+</script>
+<meta http-equiv="refresh" content="0; url=https://followthequran.com/nl/?lang=nl">
+</head>
+<body>
+<p>Deze site is verhuisd naar <a href="https://followthequran.com/nl/">followthequran.com</a>.</p>
+</body>
+</html>
